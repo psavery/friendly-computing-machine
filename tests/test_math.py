@@ -32,3 +32,16 @@ def test_div():
     assert fcm.math.div(3, 5) == 0.6
     assert fcm.math.div(-1, -4) == 0.25
     assert fcm.math.div(-3, 5) == -0.6
+
+testData = [
+    (2, 5, 10),
+    (1, 2, 2),
+    (11, 9, 99),
+    (11, 0, 0),
+    (0, 0, 0)
+]
+
+@pytest.mark.parametrize("a, b, expected", testData)
+def test_mult2(a, b, expected):
+  assert fcm.math.mult(a, b) == expected
+  assert fcm.math.mult(b, a) == expected
