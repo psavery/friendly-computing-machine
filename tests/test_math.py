@@ -27,11 +27,11 @@ def test_mult():
     assert fcm.math.mult(-3, 5) == -15
 
 def test_div():
-    assert fcm.math.div(5, 2) == 2.5
-    assert fcm.math.div(2, 5) == 0.4
-    assert fcm.math.div(3, 5) == 0.6
-    assert fcm.math.div(-1, -4) == 0.25
-    assert fcm.math.div(-3, 5) == -0.6
+    assert fcm.math.div(5.0, 2.0) == 2.5
+    assert fcm.math.div(2.0, 5.0) == 0.4
+    assert fcm.math.div(3.0, 5.0) == 0.6
+    assert fcm.math.div(-1.0, -4.0) == 0.25
+    assert fcm.math.div(-3.0, 5.0) == -0.6
 
 testData = [
     (2, 5, 10),
