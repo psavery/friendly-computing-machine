@@ -22,10 +22,10 @@ before_install:
   - pip install -e .
 
 script:
-  - py.test -v
-#  - py.test -v --cov=./tests/test_math.py
+  - py.test -v --cov=./
 
 notifications:
   email: false
 
-# after_success:
+after_success:
+  - codecov
